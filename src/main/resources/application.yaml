@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: email-verify
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/<db>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: <MySql's username>
+    password: <MySql's password>
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    database-platform: org.hibernate.dialect.MySQL
+    show-sql: true
+    generate-ddl: true
+    defer-datasource-initialization: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: <owner's email>
+    password: <owner's app password>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
