@@ -12,7 +12,7 @@ spring:
     hibernate:
       ddl-auto: create
 
-    database-platform: org.hibernate.dialect.MySQL
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
     generate-ddl: true
     defer-datasource-initialization: true
